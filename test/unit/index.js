@@ -10,5 +10,5 @@ testsContext.keys().forEach(testsContext)
 // you can also change this to match only the subset of files that
 // you want coverage for.
 // const srcContext = require.context('../../src', true, /^\.\/(?!main(\.js)?$)/)
-const srcContext = require.context('../../src', true, /^\.\/(?!.*(?main|router)).*(\.js)?$/)
+const srcContext = require.context('../../src', true, /^\.\/(?!.*(?:main|router)).*(\.js)?$/)
 srcContext.keys().forEach(srcContext)
